@@ -86,6 +86,18 @@ function canMakeAmount(target, drawer) {
   return target === 0;
 }
 
+// ALTERNATIVE APPROACH
+// function canMakeAmount(target, drawer) {
+//   for (let i = drawer.length - 1; i >= 0; i--) {
+//     while (drawer[i].quantity > 0 && target - drawer[i].value >= 0) {
+//       target -= drawer[i].value;
+//       drawer[i].quantity--;
+//     }
+//   }
+
+//   return target === 0;
+// }
+
 function transaction(cost, paid, drawer) {
   let changeDue = paid - cost;
 
