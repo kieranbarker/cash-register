@@ -1,4 +1,6 @@
-const drawer = [
+import type { Drawer } from "./types";
+
+const drawer: Drawer = [
   {
     name: "penny",
     value: 1,
